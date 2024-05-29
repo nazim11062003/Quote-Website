@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Francois+One&family=Londrina+Outline&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(237, 179, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote_box{
+    width: 40vw;
+    background-color: white;
+    border: none;
+    border-radius: 2vh;
+    min-height: 20vh;
+    text-align: center;
+    padding: 3vh;
+    position: relative;
+}
+.quote{
+    font-size: 3vh;
+    margin-top: 4vh;
+}
+.quote::before,.quote::after{
+    content: '"';
+}
+.author{
+    position: absolute;
+    right: 3vh;
+    margin-top: 2vh;
+}
+.author::before{
+    content: '"    -';
+}
+.author::after{
+    content: '"';
+}
+.newquote{
+    width: 9vw;
+    height: 6vh;
+    background-color: #C64191;
+    border: none;
+    border-radius: 3vh;
+    color: white;
+    margin-top: 7vh;
+    font-size: 2.5vh;
+}
+.newquote:hover{
+    cursor: pointer;
+}
